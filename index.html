@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunny's Hotel Online Reservation</title>
+    </head>
+    <body>
+        <img src="images/logo.png" alt="Bunny's Hotel logo">
+        <form action="submission.html" method="post">
+        <section id="guest-name">
+            <label>Name</label>
+            <br>
+            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="last-name" id="last-name">
+            <br>
+            <label for="first-name">First Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <label for="last-name">Last name</label>
+        </section>
+        <section id="user-email">
+            <label for="email">Email</label>
+            <input id="email" name="user-email" type="text">
+        </section>
+        <section id="room-type">
+            <label for="room">Room Type</label>
+            <input id="room" name="room-type" list="type" value="Please Select">
+            <datalist id="type">
+                <option value="Single">Single Room</option>
+                <option value="Twin">Twin Room</option>
+            </datalist>
+        </section>
+        <section id="guest-number">
+            <label for="guest-numbers">Number of Guests</label>
+            <input id="guest-numbers" name="gues-number" type="number" min="1" max="999" step="1">
+        </section>
+        <section id="arrival-date">
+            <label for="date">Arrival Date & Time</label>
+            <input id="date" name="arrival-date" type="date">
+        
+        </section>
+        </form>     
+    </body>
+    <footer>
+        
+    </footer>
+</html>
